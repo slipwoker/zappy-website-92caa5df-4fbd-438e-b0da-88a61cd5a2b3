@@ -8128,6 +8128,200 @@ nav.navbar .sub-menu li a:hover { color: #1a3151 !important; background-color: r
 /* /Zappy custom logo size */
 
 
+/* Added Component Styles */
+/* =============================================
+   Clients / Trusted By Section
+   ============================================= */
+.clients-trusted-section {
+  background: #f5f7fa;
+  padding: 70px 20px 60px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  text-align: center;
+}
+
+/* Container */
+.clients-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+.clients-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary, #1E3A5F);
+  margin: 0 0 10px;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+}
+
+/* Subtitle */
+.clients-subtitle {
+  font-size: 1.05rem;
+  color: #5a6a7e;
+  margin: 0 0 48px;
+  font-weight: 400;
+}
+
+/* Decorative underline under title */
+.clients-title::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 3px;
+  background: var(--primary, #1E3A5F);
+  border-radius: 2px;
+  margin: 12px auto 0;
+  opacity: 0.35;
+}
+
+/* Grid Layout — 6 columns */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px 16px;
+  align-items: start;
+  justify-items: center;
+}
+
+/* Individual Logo Wrapper */
+.clients-logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.25s ease;
+}
+
+.clients-logo-wrapper:hover {
+  transform: translateY(-4px);
+}
+
+/* Circular container for logo */
+.clients-logo-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1.5px solid rgba(30, 58, 95, 0.15);
+  box-shadow:
+    0 2px 8px rgba(30, 58, 95, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  overflow: hidden;
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  flex-shrink: 0;
+}
+
+.clients-logo-wrapper:hover .clients-logo-circle {
+  box-shadow:
+    0 6px 20px rgba(30, 58, 95, 0.16),
+    0 2px 6px rgba(0, 0, 0, 0.08);
+  border-color: rgba(30, 58, 95, 0.3);
+}
+
+/* Logo Image — always contain, never crop */
+.clients-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 0;
+}
+
+/* Label beneath logo */
+.clients-logo-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #4a5a6e;
+  text-align: center;
+  line-height: 1.3;
+  max-width: 110px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* =============================================
+   Responsive — 4 columns on tablet
+   ============================================= */
+@media (max-width: 900px) {
+  .clients-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px 12px;
+  }
+
+  .clients-logo-circle {
+    width: 95px;
+    height: 95px;
+    padding: 15px;
+  }
+
+  .clients-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* =============================================
+   Responsive — 3 columns on small tablet
+   ============================================= */
+@media (max-width: 600px) {
+  .clients-trusted-section {
+    padding: 50px 16px 44px;
+  }
+
+  .clients-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 10px;
+  }
+
+  .clients-logo-circle {
+    width: 82px;
+    height: 82px;
+    padding: 13px;
+  }
+
+  .clients-title {
+    font-size: 1.45rem;
+  }
+
+  .clients-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 32px;
+  }
+
+  .clients-logo-label {
+    font-size: 0.72rem;
+    max-width: 82px;
+  }
+}
+
+/* =============================================
+   Responsive — 2 columns on very small screens
+   ============================================= */
+@media (max-width: 380px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 10px;
+  }
+
+  .clients-logo-circle {
+    width: 90px;
+    height: 90px;
+    padding: 14px;
+  }
+
+  .clients-logo-label {
+    max-width: 90px;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
