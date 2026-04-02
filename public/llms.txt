@@ -1,0 +1,47 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+דני מאוני, שמאי רכוש מוסמך ומומחה נזיקין, מעניק חוות דעת מקצועיות ואמינות לתביעות ביטוח, סכסוכים משפטיים ועסקאות נדל״ן. הגנו על הרכוש שלכם עוד היום.
+
+### שירותים
+https://example.com/services
+משמאות נדל״ן ועד הערכת נזקי נזיקין — דני מאוני מציע מגוון שירותי שמאות מוסמכים לביטוח, למשפט ולעסקאות רכוש. גלו את הפתרון המדויק לצרכיכם.
+
+### אודות
+https://example.com/about
+היכירו את דני מאוני, שמאי רכוש מוסמך ומומחה נזיקין עם שנות ניסיון בשירות בעלי רכוש, עורכי דין וחברות ביטוח. מקצועיות, אמינות וסמכות בכל חוות דעת.
+
+### צור קשר
+https://example.com/contact
+צריכים שמאי רכוש מוסמך לתביעת ביטוח או הליך משפטי? צרו קשר עם דני מאוני היום וקבלו מענה מקצועי, מהיר ואמין שישרת את האינטרסים שלכם.
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
