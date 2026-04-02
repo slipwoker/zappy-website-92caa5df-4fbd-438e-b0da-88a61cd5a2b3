@@ -389,12 +389,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -407,7 +407,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -543,7 +543,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -734,7 +734,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '050-7591162';
         
@@ -751,7 +751,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -813,7 +813,7 @@
       <!-- Portrait Column (LEFT / END in RTL) -->
       <div class="about-profile-portrait-col">
         <div class="about-profile-portrait-frame">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1775157821072-007y1lvnh" data-element-type="image" data-zappy-zoom-wrapper-width="420px" data-zappy-zoom-wrapper-height="525px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 420px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 525px !important; display: block !important;"><img data-placeholder="about-profile-image-1" data-context="Professional portrait photograph of a confident Israeli male property and tort appraiser in his 50s, wearing a formal dark navy suit and tie, standing in a well-lit modern office with legal books and architectural documents in the background. The image should convey authority, trustworthiness, and professional expertise. Clean, formal, and dignified composition suitable for a legal and real estate appraisal firm." width="480" height="600" src="/assets/site-service-profile-image-1-1775158007783-rfeic4.webp?v=1775158009541" alt="דני מאוני שמאי רכוש ונזיקין  - שמאי רכוש ונזיקין מוסמך" class="about-profile-portrait-img zappy-editable-image" data-element-type="image" data-element-id="img-1775157821072-007y1lvnh" style="object-position: 50% 33%; margin: 0px !important; position: absolute !important; left: 0% !important; top: -4.79452% !important; width: 100% !important; height: 109.589% !important; max-width: none !important; max-height: none !important; display: block; object-fit: cover;" data-zappy-zoom="1" data-zappy-original-width="420" data-zappy-original-height="525"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1775157821072-007y1lvnh" data-element-type="image" data-zappy-zoom-wrapper-width="338px" data-zappy-zoom-wrapper-height="422px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 338px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 422px !important; display: block !important;" class="zappy-resizable-hover"><img data-placeholder="about-profile-image-1" data-context="Professional portrait photograph of a confident Israeli male property and tort appraiser in his 50s, wearing a formal dark navy suit and tie, standing in a well-lit modern office with legal books and architectural documents in the background. The image should convey authority, trustworthiness, and professional expertise. Clean, formal, and dignified composition suitable for a legal and real estate appraisal firm." width="480" height="600" src="/assets/site-service-profile-image-1-1775158007783-rfeic4.webp?v=1775158009541" alt="דני מאוני שמאי רכוש ונזיקין  - שמאי רכוש ונזיקין מוסמך" class="about-profile-portrait-img zappy-editable-image" data-element-type="image" data-element-id="img-1775157821072-007y1lvnh" style="object-position: 50% 33%; display: block !important; object-fit: cover !important; margin: 0px !important; position: absolute !important; width: 100% !important; height: 120% !important; max-width: none !important; max-height: none !important; left: 0% !important; top: -6.6% !important;" data-zappy-zoom="1" data-zappy-original-width="420" data-zappy-original-height="525" data-resize-handler-attached="true"></div>
           <div class="about-profile-portrait-badge">
             <span class="about-profile-badge-years" >+8</span>
             <span class="about-profile-badge-label">שנות ניסיון</span>
