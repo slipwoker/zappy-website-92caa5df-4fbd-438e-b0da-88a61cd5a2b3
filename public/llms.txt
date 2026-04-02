@@ -1,6 +1,4 @@
-# דני מאוני שמאי רכוש ונזיקין  — Generative Engine Optimization Map
-
-> Danny Mauni is a property and tort appraiser offering professional appraisal services in real estate and damage assessment. The business is positioned as an expert authority in the field, serving clients who need reliable, professional valuations for insurance claims, legal disputes, and property transactions. The brand identity is professional, trustworthy, and authoritative.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -40,15 +38,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About דני מאוני שמאי רכוש ונזיקין 
-Danny Mauni is a property and tort appraiser offering professional appraisal services in real estate and damage assessment. The business is positioned as an expert authority in the field, serving clients who need reliable, professional valuations for insurance claims, legal disputes, and property transactions. The brand identity is professional, trustworthy, and authoritative.
-
-## Target Audience
-בעלי רכוש, נפגעי נזיקין, חברות ביטוח, עורכי דין
-
-## Industry
-שמאות ומשפט
-
+## About Business
 ---
 
 # Additional Resources
