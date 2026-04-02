@@ -1,47 +1,57 @@
-# Business — Generative Engine Optimization Map
+# דני מאוני שמאי רכוש ונזיקין  — Generative Engine Optimization Map
+
+> Danny Mauni is a property and tort appraiser offering professional appraisal services in real estate and damage assessment. The business is positioned as an expert authority in the field, serving clients who need reliable, professional valuations for insurance claims, legal disputes, and property transactions. The brand identity is professional, trustworthy, and authoritative.
 
 ---
 
 ## Pages
 
 ### בית
-https://example.com
+https://dani-mauni-shamai-rechush-vene.zappy5.app
 דני מאוני, שמאי רכוש מוסמך ומומחה נזיקין, מעניק חוות דעת מקצועיות ואמינות לתביעות ביטוח, סכסוכים משפטיים ועסקאות נדל״ן. הגנו על הרכוש שלכם עוד היום.
 
 ### שירותים
-https://example.com/services
+https://dani-mauni-shamai-rechush-vene.zappy5.app/services
 משמאות נדל״ן ועד הערכת נזקי נזיקין — דני מאוני מציע מגוון שירותי שמאות מוסמכים לביטוח, למשפט ולעסקאות רכוש. גלו את הפתרון המדויק לצרכיכם.
 
 ### אודות
-https://example.com/about
+https://dani-mauni-shamai-rechush-vene.zappy5.app/about
 היכירו את דני מאוני, שמאי רכוש מוסמך ומומחה נזיקין עם שנות ניסיון בשירות בעלי רכוש, עורכי דין וחברות ביטוח. מקצועיות, אמינות וסמכות בכל חוות דעת.
 
 ### צור קשר
-https://example.com/contact
+https://dani-mauni-shamai-rechush-vene.zappy5.app/contact
 צריכים שמאי רכוש מוסמך לתביעת ביטוח או הליך משפטי? צרו קשר עם דני מאוני היום וקבלו מענה מקצועי, מהיר ואמין שישרת את האינטרסים שלכם.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://dani-mauni-shamai-rechush-vene.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://dani-mauni-shamai-rechush-vene.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://dani-mauni-shamai-rechush-vene.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About דני מאוני שמאי רכוש ונזיקין 
+Danny Mauni is a property and tort appraiser offering professional appraisal services in real estate and damage assessment. The business is positioned as an expert authority in the field, serving clients who need reliable, professional valuations for insurance claims, legal disputes, and property transactions. The brand identity is professional, trustworthy, and authoritative.
+
+## Target Audience
+בעלי רכוש, נפגעי נזיקין, חברות ביטוח, עורכי דין
+
+## Industry
+שמאות ומשפט
+
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://example.com/sitemap.xml
-- **Robots.txt**: https://example.com/robots.txt
+- **Sitemap**: https://dani-mauni-shamai-rechush-vene.zappy5.app/sitemap.xml
+- **Robots.txt**: https://dani-mauni-shamai-rechush-vene.zappy5.app/robots.txt
