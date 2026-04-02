@@ -242,6 +242,262 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-use-cases-section {
+  background-color: #F7F3EC;
+  background-image:
+    linear-gradient(rgba(31,61,99,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31,61,99,0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  color: var(--text-dark);
+  padding: 90px 24px 80px;
+  position: relative;
+  overflow: visible;
+  direction: rtl;
+}
+
+.index-use-cases-section .use-cases-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* ── Header ── */
+.index-use-cases-section .use-cases-header {
+  text-align: center;
+  margin-bottom: 56px;
+  max-width: 720px;
+  margin-inline: auto;
+  margin-bottom: 56px;
+}
+
+.index-use-cases-section .use-cases-label {
+  display: inline-block;
+  font-family: 'Inter', 'Source Sans 3', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(200, 155, 90, 0.1);
+  border: 1px solid rgba(200, 155, 90, 0.3);
+  padding: 5px 14px;
+  margin-bottom: 20px;
+}
+
+.index-use-cases-section .use-cases-title {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--primary);
+  margin: 0 0 18px;
+  text-align: center;
+}
+
+.index-use-cases-section .use-cases-intro {
+  font-family: 'Inter', 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin: 0;
+  text-align: center;
+}
+
+/* ── Cards Grid ── */
+.index-use-cases-section .use-cases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  direction: rtl;
+}
+
+@media (min-width: 768px) {
+  .index-use-cases-section .use-cases-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .index-use-cases-section .use-cases-title {
+    font-size: 2rem;
+  }
+}
+
+/* ── Base Card ── */
+.index-use-cases-section .use-case-card {
+  position: relative;
+  overflow: hidden;
+  padding: 36px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: right;
+}
+
+.index-use-cases-section .use-case-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 44px rgba(0,0,0,0.18);
+}
+
+/* ── Card Variants ── */
+.index-use-cases-section .use-case-card--primary {
+  background: linear-gradient(180deg, #FBF8F2 0%, #F1ECE3 100%);
+  box-shadow: inset 0 0 0 1px #D9D2C6;
+}
+
+.index-use-cases-section .use-case-card--accent {
+  background: linear-gradient(180deg, #FBF8F2 0%, #F1ECE3 100%);
+  box-shadow: inset 0 0 0 1px #D9D2C6;
+  border-top: 3px solid var(--accent);
+}
+
+.index-use-cases-section .use-case-card--dark {
+  background: linear-gradient(180deg, #24476F 0%, #1D3657 100%);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+}
+
+/* ── Icon Wrap ── */
+.index-use-cases-section .use-case-card__icon-wrap {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.index-use-cases-section .use-case-card--primary .use-case-card__icon-wrap,
+.index-use-cases-section .use-case-card--accent .use-case-card__icon-wrap {
+  background: rgba(30, 58, 95, 0.07);
+  color: var(--primary);
+}
+
+.index-use-cases-section .use-case-card--dark .use-case-card__icon-wrap {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text-light);
+}
+
+/* ── Card Content ── */
+.index-use-cases-section .use-case-card__content {
+  flex: 1;
+}
+
+/* ── Tags ── */
+.index-use-cases-section .use-case-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+  justify-content: flex-start;
+}
+
+.index-use-cases-section .use-case-tag {
+  font-family: 'Inter', 'Source Sans 3', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  background: rgba(107, 138, 166, 0.12);
+  border: 1px solid rgba(107, 138, 166, 0.25);
+  padding: 3px 10px;
+}
+
+.index-use-cases-section .use-case-tag--light {
+  color: rgba(250, 250, 248, 0.85);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ── Card Title ── */
+.index-use-cases-section .use-case-card__title {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 14px;
+}
+
+.index-use-cases-section .use-case-card--primary .use-case-card__title,
+.index-use-cases-section .use-case-card--accent .use-case-card__title {
+  color: var(--primary);
+}
+
+.index-use-cases-section .use-case-card--dark .use-case-card__title {
+  color: var(--text-light);
+}
+
+/* ── Card Description ── */
+.index-use-cases-section .use-case-card__desc {
+  font-family: 'Inter', 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.index-use-cases-section .use-case-card--primary .use-case-card__desc,
+.index-use-cases-section .use-case-card--accent .use-case-card__desc {
+  color: var(--text-muted);
+}
+
+.index-use-cases-section .use-case-card--dark .use-case-card__desc {
+  color: rgba(250, 250, 248, 0.78);
+}
+
+/* ── Decorative Number ── */
+.index-use-cases-section .use-case-card__number {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(30, 58, 95, 0.06);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.index-use-cases-section .use-case-card__number--light {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Mobile ── */
+@media (max-width: 767px) {
+  .index-use-cases-section {
+    padding: 60px 16px 56px;
+  }
+
+  .index-use-cases-section .use-cases-header {
+    margin-bottom: 36px;
+  }
+
+  .index-use-cases-section .use-cases-title {
+    font-size: 1.6rem;
+  }
+
+  .index-use-cases-section .use-cases-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px;
+  }
+
+  .index-use-cases-section .use-case-card {
+    padding: 28px 20px 24px;
+  }
+
+  .index-use-cases-section .use-case-card__number {
+    font-size: 52px;
+    bottom: 10px;
+    left: 14px;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -834,97 +1090,84 @@
   </div>
 </section>
 
-<section class="index-use-cases-section" data-layout-spec="בית-use-cases" dir="rtl">
+<section class="index-use-cases-section" dir="rtl" data-layout-spec="בית-use-cases" data-zappy-section="true">
   <div class="use-cases-container">
-
-    <!-- Intro Block -->
-    <div class="use-cases-intro">
-      <span class="use-cases-eyebrow">תחומי השירות</span>
-      <h2 class="use-cases-heading">כל מקרה מקבל את ההתייחסות המקצועית שהוא ראוי לה</h2>
-      <p class="use-cases-subtext">שמאות מקצועית מבוססת על בהירות, תיעוד מדוקדק ושיקול דעת מנוסה — בין אם מדובר בתביעת ביטוח, הליך משפטי, או עסקת נדל"ן.</p>
+    <!-- Section Header -->
+    <div class="use-cases-header">
+      <span class="use-cases-label">תחומי השירות</span>
+      <h2 class="use-cases-title">כל מקרה מקבל את ההתייחסות המקצועית שהוא ראוי לה</h2>
+      <p class="use-cases-intro">שמאות מקצועית מבוססת על בהירות, תיעוד מדוקדק ושיקול דעת מנוסה — בין אם מדובר בתביעת ביטוח, הליך משפטי, או עסקת נדל"ן.</p>
     </div>
 
-    <!-- Three Cards Grid -->
+    <!-- Cards Grid -->
     <div class="use-cases-grid">
 
-      <!-- Card 1: Insurance -->
-      <article class="use-case-card">
-        <div class="use-case-card-top-accent"></div>
-        <div class="use-case-icon-area">
-          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="6" y="8" width="28" height="26" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"></rect>
-            <path d="M13 8V5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-            <path d="M27 8V5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-            <path d="M6 16H34" stroke="currentColor" stroke-width="1.5"></path>
-            <path d="M13 23H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-            <path d="M13 28H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+      <!-- Card 1 -->
+      <article class="use-case-card use-case-card--primary">
+        <div class="use-case-card__icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
           </svg>
         </div>
-        <div class="use-case-card-content">
-          <h3 class="use-case-title">שמאות נזיקין לתביעות ביטוח</h3>
-          <p class="use-case-description">הערכת נזקים מקיפה ומתועדת לצורך הגשת תביעת ביטוח — נזקי מים, אש, רכוש, ועוד. חוות הדעת מגובה בממצאים מקצועיים ומספקת בסיס מוצק מול חברת הביטוח.</p>
+        <div class="use-case-card__content">
+          <div class="use-case-card__tags">
+            <span class="use-case-tag">ביטוח רכוש</span>
+            <span class="use-case-tag">נזקי מים ואש</span>
+          </div>
+          <h3 class="use-case-card__title">שמאות נזיקין לתביעות ביטוח</h3>
+          <p class="use-case-card__desc">הערכת נזקים מקיפה ומתועדת לצורך הגשת תביעת ביטוח — נזקי מים, אש, רכוש, ועוד. חוות הדעת מגובה בממצאים מקצועיים ומספקת בסיס מוצק מול חברת הביטוח.</p>
         </div>
-        <div class="use-case-card-footer">
-          <span class="use-case-tag">ביטוח רכוש</span>
-          <span class="use-case-tag">נזקי מים ואש</span>
-        </div>
+        <div class="use-case-card__number" aria-hidden="true">01</div>
       </article>
 
-      <!-- Card 2: Legal -->
-      <article class="use-case-card">
-        <div class="use-case-card-top-accent use-case-card-top-accent--brass"></div>
-        <div class="use-case-icon-area">
-          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M20 6L20 34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-            <path d="M10 12L20 6L30 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M8 34H32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-            <path d="M8 18L14 28H2L8 18Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"></path>
-            <path d="M32 18L38 28H26L32 18Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"></path>
+      <!-- Card 2 -->
+      <article class="use-case-card use-case-card--accent">
+        <div class="use-case-card__icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
           </svg>
         </div>
-        <div class="use-case-card-content">
-          <h3 class="use-case-title">חוות דעת מומחה להליכים משפטיים</h3>
-          <p class="use-case-description">תמיכה מקצועית בהליכי בוררות, גישור ותביעות משפטיות. שמאי נזיקין מומחה לעורכי דין — חוות דעת מנומקת, עמידה בחקירה שכנגד, ותמיכה מלאה לאורך ההליך.</p>
+        <div class="use-case-card__content">
+          <div class="use-case-card__tags">
+            <span class="use-case-tag">ליטיגציה</span>
+            <span class="use-case-tag">חוות דעת מומחה</span>
+          </div>
+          <h3 class="use-case-card__title">חוות דעת מומחה להליכים משפטיים</h3>
+          <p class="use-case-card__desc">תמיכה מקצועית בהליכי בוררות, גישור ותביעות משפטיות. שמאי נזיקין מומחה לעורכי דין — חוות דעת מנומקת, עמידה בחקירה שכנגד, ותמיכה מלאה לאורך ההליך.</p>
         </div>
-        <div class="use-case-card-footer">
-          <span class="use-case-tag">ליטיגציה</span>
-          <span class="use-case-tag">חוות דעת מומחה</span>
-        </div>
+        <div class="use-case-card__number" aria-hidden="true">02</div>
       </article>
 
-      <!-- Card 3: Property Transaction -->
-      <article class="use-case-card">
-        <div class="use-case-card-top-accent"></div>
-        <div class="use-case-icon-area">
-          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M6 20L20 8L34 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M10 17V34H30V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            <rect x="16" y="24" width="8" height="10" rx="0.5" stroke="currentColor" stroke-width="1.5" fill="none"></rect>
-            <path d="M16 28H24" stroke="currentColor" stroke-width="1.5"></path>
+      <!-- Card 3 -->
+      <article class="use-case-card use-case-card--dark">
+        <div class="use-case-card__icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="3" y1="9" x2="21" y2="9"></line>
+            <line x1="9" y1="21" x2="9" y2="9"></line>
           </svg>
         </div>
-        <div class="use-case-card-content">
-          <h3 class="use-case-title">שמאות רכוש ונזיקין ונזיקין</h3>
-          <p class="use-case-description">הערכת שווי מקצועית של רכוש ונזקים — לצורך תביעות ביטוח, הליכים משפטיים ופיצויים. שמאי רכוש ונזיקין מוסמך עם ניסיון רב.</p>
+        <div class="use-case-card__content">
+          <div class="use-case-card__tags">
+            <span class="use-case-tag use-case-tag--light">נזקי רכוש</span>
+            <span class="use-case-tag use-case-tag--light">תביעות ביטוח</span>
+          </div>
+          <h3 class="use-case-card__title">שמאות רכוש ונזיקין ונזיקין</h3>
+          <p class="use-case-card__desc">הערכת שווי מקצועית של רכוש ונזקים — לצורך תביעות ביטוח, הליכים משפטיים ופיצויים. שמאי רכוש ונזיקין מוסמך עם ניסיון רב.</p>
         </div>
-        <div class="use-case-card-footer">
-          <span class="use-case-tag">נזקי רכוש</span>
-          <span class="use-case-tag">תביעות ביטוח</span>
-        </div>
+        <div class="use-case-card__number use-case-card__number--light" aria-hidden="true">03</div>
       </article>
 
     </div>
-    <!-- End Grid -->
-  </div>
+    <!-- End Cards Grid -->
 
-  <!-- Bottom Divider: Blueprint grid lines fading into stepped edge -->
-  <div class="use-cases-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,72 L0,42 L120,42 L120,52 L280,52 L280,38 L440,38 L440,52 L600,52 L600,36 L760,36 L760,50 L920,50 L920,40 L1080,40 L1080,52 L1200,52 L1200,72 Z" fill="#FBF8F2" opacity="0.5"></path>
-      <path d="M0,72 L0,54 L100,54 L100,60 L250,60 L250,48 L420,48 L420,60 L580,60 L580,46 L740,46 L740,58 L900,58 L900,48 L1060,48 L1060,60 L1200,60 L1200,72 Z" fill="#FBF8F2"></path>
-    </svg>
   </div>
-
 </section>
 
 <section class="index-services-section" data-layout-spec="בית-services" dir="rtl">
