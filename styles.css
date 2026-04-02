@@ -68,7 +68,6 @@
   src: url('assets/fonts/Rubik-Bold.woff2') format('woff2');
 }
 
-
 /* Self-hosted fonts (Inter + Rubik for multi-language support) */
 
 /* Inter font (English / LTR languages) */
@@ -1333,7 +1332,6 @@ pre {
   }
 }
 
-
 /* ============================================
    NAVBAR LAYOUT - POST-GENERATION FIXES
    Structural layout only - colors from Claude
@@ -2178,7 +2176,6 @@ html[lang="ar"] .nav-cta-btn {
 /* Post-generation fix: Remove main element margin-top and padding-top */
 main { margin-top: 0 !important; padding-top: 0 !important; }
 
-
 /* Footer Styles */
 .site-footer {
   --primary: #1E3A5F;
@@ -2542,7 +2539,6 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   }
 }
 
-
 /* Footer Contrast Guard — overrides dark-on-dark text */
 .site-footer .contact-list a,
 .site-footer .contact-list li,
@@ -2904,221 +2900,23 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   }
 }
 
-/* index-use-cases */
-.index-use-cases-section {
-  position: relative;
-  overflow: visible;
-  background-color: #FBF8F2;
-  background-image:
-    linear-gradient(rgba(31,61,99,0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(31,61,99,0.045) 1px, transparent 1px),
-    linear-gradient(180deg, #FBF8F2 0%, #F1ECE3 100%);
-  background-size: 32px 32px, 32px 32px, 100% 100%;
-  color: var(--text-dark);
-  padding: 96px 24px 120px;
-  direction: rtl;
-}
-
-.index-use-cases-section .use-cases-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-
 /* ── Intro Block ── */
-.index-use-cases-section .use-cases-intro {
-  text-align: center;
-  max-width: 680px;
-  margin: 0 auto 64px;
-}
-
-.index-use-cases-section .use-cases-eyebrow {
-  display: inline-block;
-  font-family: 'Rubik', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent);
-  border-bottom: 1px solid var(--accent);
-  padding-bottom: 3px;
-  margin-bottom: 18px;
-}
-
-.index-use-cases-section .use-cases-heading {
-  font-family: 'Rubik', sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.3;
-  color: var(--primary);
-  margin: 0 0 20px;
-  letter-spacing: 0.01em;
-}
-
-.index-use-cases-section .use-cases-subtext {
-  font-family: 'Rubik', sans-serif;
-  line-height: 1.75;
-  color: var(--text-muted);
-  margin: 0;
-  text-align: center;
-}
 
 /* ── Cards Grid ── */
-.index-use-cases-section .use-cases-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  direction: rtl;
-}
 
 /* ── Individual Card ── */
-.index-use-cases-section .use-case-card {
-  background: linear-gradient(180deg, #FFFFFF 0%, #FDFAF5 100%);
-  border: 1px solid var(--border-light);
-  border-radius: 4px;
-  padding: 40px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.index-use-cases-section .use-case-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
-}
 
 /* Top accent line */
-.index-use-cases-section .use-case-card-top-accent {
-  position: absolute;
-  top: 0;
-  inset-inline-start: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--secondary);
-  opacity: 0.45;
-}
-
-.index-use-cases-section .use-case-card-top-accent--brass {
-  background: var(--accent);
-  opacity: 0.85;
-}
 
 /* Icon Area */
-.index-use-cases-section .use-case-icon-area {
-  color: var(--secondary);
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.index-use-cases-section .use-case-icon-area svg {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-}
 
 /* Card Content */
-.index-use-cases-section .use-case-card-content {
-  flex: 1;
-}
-
-.index-use-cases-section .use-case-title {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.375rem;
-  font-weight: 700;
-  line-height: 1.35;
-  color: var(--primary);
-  margin: 0 0 14px;
-  letter-spacing: 0.01em;
-}
-
-.index-use-cases-section .use-case-description {
-  font-family: 'Rubik', sans-serif;
-  line-height: 1.75;
-  color: var(--text-muted);
-  margin: 0;
-}
 
 /* Card Footer Tags */
-.index-use-cases-section .use-case-card-footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 28px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(217,223,229,0.6);
-  justify-content: flex-start;
-}
-
-.index-use-cases-section .use-case-tag {
-  font-family: 'Rubik', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  color: var(--secondary);
-  background: rgba(107,138,166,0.08);
-  border: 1px solid rgba(107,138,166,0.22);
-  border-radius: 2px;
-  padding: 4px 10px;
-  white-space: nowrap;
-}
 
 /* ── Bottom Divider ── */
-.index-use-cases-section .use-cases-divider-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 72px;
-  pointer-events: none;
-  z-index: 5;
-}
-
-.index-use-cases-section .use-cases-divider-wrapper svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
 
 /* ── Responsive ── */
-@media (max-width: 1024px) {
-  .index-use-cases-section .use-cases-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .index-use-cases-section {
-    padding: 56px 16px 96px;
-  }
-
-  .index-use-cases-section .use-cases-intro {
-    margin-bottom: 40px;
-  }
-
-  .index-use-cases-section .use-cases-heading {
-    font-size: 1.6rem;
-  }
-
-  .index-use-cases-section .use-cases-grid {
-    grid-template-columns: 1fr !important;
-    gap: 16px;
-  }
-
-  .index-use-cases-section .use-case-card {
-    padding: 28px 24px;
-  }
-
-  .index-use-cases-section .use-cases-divider-wrapper {
-    height: 48px;
-  }
-}
 
 /* index-services */
 .index-services-section {
@@ -4778,7 +4576,6 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   }
 }
 /* ZAPPY_POSTGEN_GUARD_RTL_ORDER:שירותים-capabilities — stripped 1 order declaration(s) conflicting with RTL grid */
-
 
 /* services-case-studies */
 .services-case-studies-section {
@@ -7286,13 +7083,10 @@ a.contact-contact-methods-section .ccm-contact-link:hover,
   }
 }
 
-
-
 /* Global font override - exclude icon fonts and special elements */
 *:not(.fas):not(.far):not(.fab):not(.fa):not([class*="fa-"]):not(.iconify):not([class*="icon"]):not(code):not(pre):not(i[class*="fa"]) {
   font-family: 'Rubik', sans-serif !important;
 }
-
 
 /* Logo size constraint - enforce max-height only */
 .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
@@ -7301,7 +7095,6 @@ a.contact-contact-methods-section .ccm-contact-link:hover,
   width: auto !important;
   object-fit: contain !important;
 }
-
 
 /* Hide WhatsApp float button on desktop (mobile-only) */
 @media (min-width: 769px) {
@@ -7313,10 +7106,8 @@ a.contact-contact-methods-section .ccm-contact-link:hover,
   }
 }
 
-
 /* Footer contact alignment fix */
 .footer-contact li > a { display: flex; align-items: flex-start; gap: inherit; }
-
 
 /* ============================================
    MOBILE RESPONSIVE FIXES (Auto-generated)
@@ -7531,7 +7322,6 @@ a.contact-contact-methods-section .ccm-contact-link:hover,
 
 /* END MOBILE RESPONSIVE FIXES */
 
-
 /* Legal Pages Content Styles */
 
 /* Legal Pages Content Styles */
@@ -7600,7 +7390,6 @@ a.contact-contact-methods-section .ccm-contact-link:hover,
 .legal-page-content .contact-box a:hover {
   opacity: 0.8;
 }
-
 
 /* Cookie Consent Styles */
 
@@ -7698,7 +7487,6 @@ a.contact-contact-methods-section .ccm-contact-link:hover,
   white-space: nowrap !important;
   border: 0 !important;
 }
-
 
 /* Custom Accessibility Toolbar Styling - Zappy Style */
 
@@ -7919,408 +7707,294 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
-/* AI-generated section */
-/* ============================================
-   SPEC EXPERTISE SECTION — Full Styles
-   ============================================ */
-
-.spec-expertise-section {
-  background-color: #FAFAF8;
-  padding: 90px 20px 100px;
-  font-family: system-ui, sans-serif;
-  direction: rtl;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Subtle background texture */
-.spec-expertise-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (בית-use-cases)
+   Added: 2026-04-02T19:15:50.611Z
+   ═══════════════════════════════════════════════════════════ */
+.index-use-cases-section {
+  background-color: #F7F3EC;
   background-image:
-    radial-gradient(circle at 10% 20%, rgba(30, 58, 95, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 90% 80%, rgba(30, 58, 95, 0.04) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: 0;
+    linear-gradient(rgba(31,61,99,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31,61,99,0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  color: var(--text-dark);
+  padding: 90px 24px 80px;
+  position: relative;
+  overflow: visible;
+  direction: rtl;
 }
 
-.spec-expertise-container {
+.index-use-cases-section .use-cases-container {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
-  z-index: 1;
+  padding: 0;
 }
 
-/* ---- Header ---- */
-.spec-expertise-header {
+/* ── Header ── */
+.index-use-cases-section .use-cases-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
+  max-width: 720px;
+  margin-inline: auto;
+  margin-bottom: 56px;
 }
 
-.spec-expertise-badge {
+.index-use-cases-section .use-cases-label {
   display: inline-block;
-  background-color: rgba(30, 58, 95, 0.1);
-  color: var(--primary, #1E3A5F);
-  font-size: 13px;
+  font-family: 'Inter', 'Source Sans 3', sans-serif;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 6px 18px;
-  border-radius: 50px;
-  margin-bottom: 18px;
-  border: 1px solid rgba(30, 58, 95, 0.18);
+  color: var(--accent);
+  background: rgba(200, 155, 90, 0.1);
+  border: 1px solid rgba(200, 155, 90, 0.3);
+  padding: 5px 14px;
+  margin-bottom: 20px;
 }
 
-.spec-expertise-title {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  font-weight: 800;
-  color: var(--primary, #1E3A5F);
+.index-use-cases-section .use-cases-title {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--primary);
   margin: 0 0 18px;
-  line-height: 1.25;
-  letter-spacing: -0.01em;
+  text-align: center;
 }
 
-.spec-expertise-subtitle {
-  font-size: clamp(1rem, 2vw, 1.15rem);
-  color: #4a5568;
-  max-width: 700px;
-  margin: 0 auto;
+.index-use-cases-section .use-cases-intro {
+  font-family: 'Inter', 'Source Sans 3', sans-serif;
+  font-size: 16px;
   line-height: 1.75;
+  color: var(--text-muted);
+  margin: 0;
+  text-align: center;
 }
 
-/* ---- Cards Grid ---- */
-.spec-cards-grid {
+/* ── Cards Grid ── */
+.index-use-cases-section .use-cases-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  align-items: start;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  direction: rtl;
 }
 
-/* ---- Base Card ---- */
-.spec-card {
-  background: #ffffff;
-  border-radius: 18px;
-  box-shadow:
-    0 4px 20px rgba(30, 58, 95, 0.08),
-    0 1px 4px rgba(30, 58, 95, 0.05);
-  overflow: hidden;
-  border: 1.5px solid rgba(30, 58, 95, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+@media (min-width: 768px) {
+  .index-use-cases-section .use-cases-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .index-use-cases-section .use-cases-title {
+    font-size: 2rem;
+  }
+}
+
+/* ── Base Card ── */
+.index-use-cases-section .use-case-card {
   position: relative;
+  overflow: hidden;
+  padding: 36px 28px 32px;
   display: flex;
   flex-direction: column;
+  gap: 0;
+  border-radius: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: right;
 }
 
-.spec-card:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 16px 48px rgba(30, 58, 95, 0.14),
-    0 4px 12px rgba(30, 58, 95, 0.08);
+.index-use-cases-section .use-case-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 44px rgba(0,0,0,0.18);
 }
 
-/* ---- Featured Card ---- */
-.spec-card--featured {
-  border: 2.5px solid #C9A227;
-  box-shadow:
-    0 6px 30px rgba(201, 162, 39, 0.2),
-    0 2px 8px rgba(30, 58, 95, 0.1);
-  transform: translateY(-8px);
+/* ── Card Variants ── */
+.index-use-cases-section .use-case-card--primary {
+  background: linear-gradient(180deg, #FBF8F2 0%, #F1ECE3 100%);
+  box-shadow: inset 0 0 0 1px #D9D2C6;
 }
 
-.spec-card--featured:hover {
-  transform: translateY(-14px);
-  box-shadow:
-    0 20px 56px rgba(201, 162, 39, 0.25),
-    0 6px 16px rgba(30, 58, 95, 0.1);
+.index-use-cases-section .use-case-card--accent {
+  background: linear-gradient(180deg, #FBF8F2 0%, #F1ECE3 100%);
+  box-shadow: inset 0 0 0 1px #D9D2C6;
+  border-top: 3px solid var(--accent);
 }
 
-/* ---- Featured Tag ---- */
-.spec-card-featured-tag {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  z-index: 10;
-  background: linear-gradient(135deg, #C9A227 0%, #E8C547 100%);
-  color: #1a1a1a;
-  font-size: 12.5px;
-  font-weight: 800;
-  padding: 6px 14px;
-  border-radius: 50px;
-  letter-spacing: 0.04em;
-  box-shadow: 0 3px 12px rgba(201, 162, 39, 0.45);
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.index-use-cases-section .use-case-card--dark {
+  background: linear-gradient(180deg, #24476F 0%, #1D3657 100%);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
 }
 
-.spec-featured-star {
-  font-size: 13px;
-  color: #1a1a1a;
-}
-
-/* ---- Card Image ---- */
-.spec-card-image-wrap {
-  position: relative;
-  height: 220px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.spec-card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.spec-card:hover .spec-card-image {
-  transform: scale(1.04);
-}
-
-.spec-card-image-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(30, 58, 95, 0.08) 0%,
-    rgba(30, 58, 95, 0.45) 100%
-  );
-  pointer-events: none;
-}
-
-.spec-card-image-overlay--fire {
-  background: linear-gradient(
-    to bottom,
-    rgba(180, 50, 10, 0.08) 0%,
-    rgba(120, 30, 5, 0.45) 100%
-  );
-}
-
-/* ---- Card Icon ---- */
-.spec-card-icon-wrap {
-  position: absolute;
-  bottom: -20px;
-  left: 24px;
-  width: 52px;
-  height: 52px;
-  background: var(--primary, #1E3A5F);
-  border-radius: 14px;
+/* ── Icon Wrap ── */
+.index-use-cases-section .use-case-card__icon-wrap {
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(30, 58, 95, 0.35);
-  z-index: 5;
-  border: 3px solid #ffffff;
-  color: #ffffff;
-  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  flex-shrink: 0;
 }
 
-.spec-card-icon-wrap--featured {
-  background: linear-gradient(135deg, #C9A227 0%, #E8C547 100%);
-  color: #1a1a1a;
-  box-shadow: 0 4px 16px rgba(201, 162, 39, 0.45);
+.index-use-cases-section .use-case-card--primary .use-case-card__icon-wrap,
+.index-use-cases-section .use-case-card--accent .use-case-card__icon-wrap {
+  background: rgba(30, 58, 95, 0.07);
+  color: var(--primary);
 }
 
-.spec-card:hover .spec-card-icon-wrap {
-  transform: scale(1.08) rotate(-3deg);
+.index-use-cases-section .use-case-card--dark .use-case-card__icon-wrap {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text-light);
 }
 
-.spec-card-icon {
-  width: 28px;
-  height: 28px;
-  color: inherit;
-}
-
-/* ---- Card Body ---- */
-.spec-card-body {
-  padding: 36px 24px 28px;
-  display: flex;
-  flex-direction: column;
+/* ── Card Content ── */
+.index-use-cases-section .use-case-card__content {
   flex: 1;
 }
 
-.spec-card-title {
-  font-size: 1.2rem;
-  font-weight: 800;
-  color: var(--primary, #1E3A5F);
-  margin: 0 0 12px;
-  line-height: 1.3;
-}
-
-.spec-card--featured .spec-card-title {
-  color: #1a1a1a;
-}
-
-.spec-card-desc {
-  font-size: 0.95rem;
-  color: #4a5568;
-  line-height: 1.72;
-  margin: 0 0 20px;
-}
-
-/* ---- Card List ---- */
-.spec-card-list {
-  list-style: none;
-  margin: 0 0 24px;
-  padding: 0;
+/* ── Tags ── */
+.index-use-cases-section .use-case-card__tags {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.spec-card-list-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.9rem;
-  color: #374151;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.spec-list-icon {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  color: var(--primary, #1E3A5F);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.spec-card--featured .spec-list-icon {
-  color: #C9A227;
-}
-
-.spec-list-icon svg {
-  width: 20px;
-  height: 20px;
-}
-
-/* ---- CTA Button ---- */
-.spec-card-cta {
-  display: inline-flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 6px;
-  margin-top: auto;
-  padding: 12px 22px;
-  background-color: transparent;
-  color: var(--primary, #1E3A5F);
-  border: 2px solid var(--primary, #1E3A5F);
-  border-radius: 50px;
-  font-size: 0.9rem;
+  margin-bottom: 14px;
+  justify-content: flex-start;
+}
+
+.index-use-cases-section .use-case-tag {
+  font-family: 'Inter', 'Source Sans 3', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  background: rgba(107, 138, 166, 0.12);
+  border: 1px solid rgba(107, 138, 166, 0.25);
+  padding: 3px 10px;
+}
+
+.index-use-cases-section .use-case-tag--light {
+  color: rgba(250, 250, 248, 0.85);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ── Card Title ── */
+.index-use-cases-section .use-case-card__title {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: 1.375rem;
   font-weight: 700;
-  text-decoration: none;
-  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
-  align-self: flex-start;
-  cursor: pointer;
-  font-family: system-ui, sans-serif;
+  line-height: 1.35;
+  margin: 0 0 14px;
 }
 
-.spec-card-cta:hover,
-.spec-card-cta:focus-visible {
-  background-color: var(--primary, #1E3A5F);
-  color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(30, 58, 95, 0.3);
-  outline: none;
+.index-use-cases-section .use-case-card--primary .use-case-card__title,
+.index-use-cases-section .use-case-card--accent .use-case-card__title {
+  color: var(--primary);
 }
 
-.spec-card-cta:focus-visible {
-  outline: 3px solid #C9A227;
-  outline-offset: 3px;
+.index-use-cases-section .use-case-card--dark .use-case-card__title {
+  color: var(--text-light);
 }
 
-.spec-card-cta--featured {
-  background: linear-gradient(135deg, #C9A227 0%, #E8C547 100%);
-  color: #1a1a1a;
-  border-color: transparent;
-  box-shadow: 0 4px 14px rgba(201, 162, 39, 0.3);
+/* ── Card Description ── */
+.index-use-cases-section .use-case-card__desc {
+  font-family: 'Inter', 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 0;
 }
 
-.spec-card-cta--featured:hover,
-.spec-card-cta--featured:focus-visible {
-  background: linear-gradient(135deg, #b08d1e 0%, #d4ae30 100%);
-  color: #1a1a1a;
-  box-shadow: 0 8px 24px rgba(201, 162, 39, 0.45);
+.index-use-cases-section .use-case-card--primary .use-case-card__desc,
+.index-use-cases-section .use-case-card--accent .use-case-card__desc {
+  color: var(--text-muted);
 }
 
-/* ============================================
-   RESPONSIVE — Tablet
-   ============================================ */
-@media (max-width: 1024px) {
-  .spec-cards-grid {
-    gap: 22px;
-  }
-
-  .spec-card--featured {
-    transform: translateY(-4px);
-  }
-
-  .spec-card--featured:hover {
-    transform: translateY(-10px);
-  }
+.index-use-cases-section .use-case-card--dark .use-case-card__desc {
+  color: rgba(250, 250, 248, 0.78);
 }
 
-/* ============================================
-   RESPONSIVE — Mobile (stacked)
-   ============================================ */
-@media (max-width: 768px) {
-  .spec-expertise-section {
-    padding: 60px 16px 70px;
-  }
-
-  .spec-expertise-header {
-    margin-bottom: 40px;
-  }
-
-  .spec-cards-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    max-width: 520px;
-    margin: 0 auto;
-  }
-
-  .spec-card--featured {
-    transform: none;
-    order: -1;
-  }
-
-  .spec-card--featured:hover {
-    transform: translateY(-6px);
-  }
-
-  .spec-card-image-wrap {
-    height: 200px;
-  }
-
-  .spec-card-body {
-    padding: 32px 20px 24px;
-  }
-
-  .spec-card-icon-wrap {
-    left: 18px;
-  }
+/* ── Decorative Number ── */
+.index-use-cases-section .use-case-card__number {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(30, 58, 95, 0.06);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
 }
 
-@media (max-width: 480px) {
-  .spec-expertise-title {
+.index-use-cases-section .use-case-card__number--light {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Mobile ── */
+@media (max-width: 767px) {
+  .index-use-cases-section {
+    padding: 60px 16px 56px;
+  }
+
+  .index-use-cases-section .use-cases-header {
+    margin-bottom: 36px;
+  }
+
+  .index-use-cases-section .use-cases-title {
     font-size: 1.6rem;
   }
 
-  .spec-expertise-subtitle {
-    font-size: 0.97rem;
+  .index-use-cases-section .use-cases-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px;
   }
 
-  .spec-card-title {
-    font-size: 1.1rem;
+  .index-use-cases-section .use-case-card {
+    padding: 28px 20px 24px;
   }
 
-  .spec-card-image-wrap {
-    height: 180px;
+  .index-use-cases-section .use-case-card__number {
+    font-size: 52px;
+    bottom: 10px;
+    left: 14px;
   }
+}
+
+.index-use-cases-section .use-cases-grid {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+@media (max-width: 767px) {
+.index-use-cases-section .use-cases-grid {
+  grid-template-columns: 1fr !important;
+}
+}
+
+.index-use-cases-section .use-case-card__link {
+  display: inline-block;
+  margin-top: 16px;
+  font-family: 'Inter', 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.index-use-cases-section .use-case-card__link:hover {
+  color: var(--primary);
+}
+
+.index-use-cases-section .use-case-card__link--light {
+  color: rgba(200, 155, 90, 0.9);
+}
+
+.index-use-cases-section .use-case-card__link--light:hover {
+  color: #fff;
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
