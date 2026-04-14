@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dani-mauni-shamai-rechush-vene.zappy5.app/sitemap.xml
+Sitemap: https://danimaoni.co.il/sitemap.xml

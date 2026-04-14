@@ -5,33 +5,33 @@
 ## Pages
 
 ### בית
-https://dani-mauni-shamai-rechush-vene.zappy5.app
+https://danimaoni.co.il
 דני מאוני, שמאי רכוש מוסמך ומומחה נזיקין, מעניק חוות דעת מקצועיות ואמינות לתביעות ביטוח, סכסוכים משפטיים ועסקאות נדל״ן. הגנו על הרכוש שלכם עוד היום.
 
 ### שירותים
-https://dani-mauni-shamai-rechush-vene.zappy5.app/services
+https://danimaoni.co.il/services
 משמאות נדל״ן ועד הערכת נזקי נזיקין — דני מאוני מציע מגוון שירותי שמאות מוסמכים לביטוח, למשפט ולעסקאות רכוש. גלו את הפתרון המדויק לצרכיכם.
 
 ### אודות
-https://dani-mauni-shamai-rechush-vene.zappy5.app/about
+https://danimaoni.co.il/about
 היכירו את דני מאוני, שמאי רכוש מוסמך ומומחה נזיקין עם שנות ניסיון בשירות בעלי רכוש, עורכי דין וחברות ביטוח. מקצועיות, אמינות וסמכות בכל חוות דעת.
 
 ### צור קשר
-https://dani-mauni-shamai-rechush-vene.zappy5.app/contact
+https://danimaoni.co.il/contact
 צריכים שמאי רכוש מוסמך לתביעת ביטוח או הליך משפטי? צרו קשר עם דני מאוני היום וקבלו מענה מקצועי, מהיר ואמין שישרת את האינטרסים שלכם.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://dani-mauni-shamai-rechush-vene.zappy5.app/privacy
+https://danimaoni.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://dani-mauni-shamai-rechush-vene.zappy5.app/terms
+https://danimaoni.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://dani-mauni-shamai-rechush-vene.zappy5.app/accessibility
+https://danimaoni.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -43,5 +43,5 @@ Information about WCAG compliance and accessibility features.
 
 # Additional Resources
 
-- **Sitemap**: https://dani-mauni-shamai-rechush-vene.zappy5.app/sitemap.xml
-- **Robots.txt**: https://dani-mauni-shamai-rechush-vene.zappy5.app/robots.txt
+- **Sitemap**: https://danimaoni.co.il/sitemap.xml
+- **Robots.txt**: https://danimaoni.co.il/robots.txt
