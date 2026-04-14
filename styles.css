@@ -8340,6 +8340,55 @@ nav.navbar .sub-menu li a:hover { color: #1a3151 !important; background-color: r
   }
 }
 
+@media (max-width: 768px) {
+#layout-1775162683174 .hero-about {
+  min-height: 100vh;
+}
+
+#layout-1775162683174 [style*="position:absolute;top:0"] ,
+  #layout-1775162683174 div[style*="top:0;right:0;left:0;z-index:20"] {
+  z-index: 30 !important;
+  background: linear-gradient(180deg, rgba(15,30,55,0.98) 0%, rgba(15,30,55,0.85) 60%, rgba(15,30,55,0) 100%) !important;
+  padding: 40px 16px 40px !important;
+}
+
+#layout-1775162683174 .hero-about__content-wrap {
+  padding-top: 160px !important;
+}
+}
+
+@media (max-width: 768px) {
+#layout-1775162683174 .hero-about__bg {
+  height: 60% !important;
+  top: auto !important;
+  bottom: 0 !important;
+}
+
+#layout-1775162683174 .hero-about__overlay {
+  height: 60% !important;
+  top: auto !important;
+  bottom: 0 !important;
+}
+
+#layout-1775162683174 .hero-about {
+  background: linear-gradient(180deg, #1D3657 40%, transparent 100%) !important;
+  min-height: 100vh !important;
+}
+
+#layout-1775162683174 div[style*="position:absolute;top:0"],
+  #layout-1775162683174 > div.hero-about > div[style*="top:0"] {
+  position: relative !important;
+  z-index: 50 !important;
+  padding-top: 80px !important;
+  background: transparent !important;
+}
+
+#layout-1775162683174 .hero-about__content-wrap {
+  padding-top: 20px !important;
+  min-height: auto !important;
+}
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
