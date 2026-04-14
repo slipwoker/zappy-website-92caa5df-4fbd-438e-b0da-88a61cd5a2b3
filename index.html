@@ -1214,71 +1214,56 @@
 
 
 
-<section style="width:100%;max-width:100%;box-sizing:border-box;position:relative;overflow:visible;" data-zappy-section="true" class="section" id="layout-1775162683174">
+<section style="width:100%;max-width:100%;box-sizing:border-box;position:relative;overflow:hidden;min-height:100vh;font-family:system-ui,sans-serif;direction:rtl;" data-zappy-section="true" class="section" id="layout-1775162683174">
 <style>
-  .hero-daني {
+  .hero-about {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    min-height: 100vh;
     position: relative;
+    min-height: 100vh;
     display: flex;
     align-items: stretch;
     overflow: hidden;
-    font-family: system-ui, sans-serif;
-    direction: rtl;
   }
 
-  .hero-bg-layer {
+  .hero-about__bg {
     position: absolute;
     inset: 0;
     z-index: 0;
   }
 
-  .hero-bg-layer [data-preserve-bg="0"] {
+  .hero-about__bg-img {
     width: 100%;
     height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    object-fit: cover;
+    display: block;
   }
 
-  .hero-scrim {
+  .hero-about__overlay {
     position: absolute;
     inset: 0;
-    z-index: 1;
     background: linear-gradient(
-      115deg,
-      rgba(29, 54, 87, 0.97) 0%,
-      rgba(29, 54, 87, 0.90) 40%,
-      rgba(29, 54, 87, 0.45) 70%,
-      rgba(29, 54, 87, 0.15) 100%
+      120deg,
+      rgba(29,54,87,0.97) 0%,
+      rgba(29,54,87,0.88) 45%,
+      rgba(29,54,87,0.45) 75%,
+      rgba(29,54,87,0.18) 100%
     );
+    z-index: 1;
   }
 
-  .hero-diagonal-accent {
-    position: absolute;
-    top: 0;
-    right: -120px;
-    width: 55%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(200, 155, 90, 0.08) 0%, rgba(200, 155, 90, 0.02) 100%);
-    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
-    z-index: 2;
-    pointer-events: none;
-  }
-
-  .hero-gold-bar {
+  .hero-about__gold-stripe {
     position: absolute;
     top: 0;
     right: 0;
     width: 6px;
     height: 100%;
     background: var(--gradient-secondary);
-    z-index: 3;
+    z-index: 10;
   }
 
-  .hero-content-wrapper {
+  .hero-about__content-wrap {
     position: relative;
     z-index: 10;
     width: 100%;
@@ -1288,416 +1273,377 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     min-height: 100vh;
-    padding: 120px 48px 80px 48px;
-    box-sizing: border-box;
+    padding: 120px 60px 80px 60px;
     gap: 60px;
   }
 
-  .hero-text-block {
+  .hero-about__text-col {
     display: flex;
     flex-direction: column;
     gap: 28px;
   }
 
-  .hero-eyebrow {
+  .hero-about__badge {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    background: rgba(200, 155, 90, 0.15);
-    border: 1px solid rgba(200, 155, 90, 0.4);
+    gap: 10px;
+    background: rgba(200,155,90,0.15);
+    border: 1px solid rgba(200,155,90,0.4);
     border-radius: 2px;
     padding: 8px 18px;
     width: fit-content;
   }
 
-  .hero-eyebrow-text {
+  .hero-about__badge-line {
+    width: 28px;
+    height: 2px;
+    background: var(--gradient-secondary);
+    display: inline-block;
+  }
+
+  .hero-about__badge-text {
     color: var(--accent);
-    font-size: 13px;
+    font-size: 0.78rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
   }
 
-  .hero-eyebrow-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--accent);
-    animation: pulse-dot 2s ease-in-out infinite;
-  }
-
-  @keyframes pulse-dot {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(0.7); }
-  }
-
-  .hero-h1 {
-    font-size: clamp(2.8rem, 5vw, 4.2rem);
-    font-weight: 900;
-    line-height: 1.1;
+  .hero-about__heading {
+    font-size: clamp(1.9rem, 3.5vw, 3.1rem);
+    font-weight: 800;
     color: var(--text-light);
+    line-height: 1.25;
     margin: 0;
-    letter-spacing: -1px;
+    position: relative;
   }
 
-  .hero-h1 span {
-    display: block;
-    background: var(--gradient-gold-shine);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .hero-about__heading em {
+    font-style: normal;
+    color: var(--accent);
+    display: inline-block;
+    position: relative;
   }
 
-  .hero-divider-line {
-    width: 80px;
+  .hero-about__heading em::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    width: 100%;
     height: 3px;
     background: var(--gradient-secondary);
     border-radius: 2px;
   }
 
-  .hero-h2 {
-    font-size: clamp(1.1rem, 1.8vw, 1.4rem);
-    font-weight: 600;
-    color: rgba(250, 250, 248, 0.9);
-    margin: 0;
-    line-height: 1.6;
+  .hero-about__divider {
+    width: 64px;
+    height: 3px;
+    background: var(--gradient-secondary);
+    border-radius: 2px;
   }
 
-  .hero-paragraph {
-    font-size: clamp(0.9rem, 1.2vw, 1.02rem);
-    color: rgba(250, 250, 248, 0.72);
+  .hero-about__para {
+    color: rgba(250,250,248,0.85);
+    font-size: clamp(0.95rem, 1.4vw, 1.08rem);
     line-height: 1.85;
     margin: 0;
+    font-weight: 400;
   }
 
-  .hero-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+  .hero-about__stats {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
     margin-top: 8px;
   }
 
-  .hero-stat-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(200, 155, 90, 0.25);
-    border-radius: 4px;
-    padding: 20px 18px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.25s ease;
-    cursor: default;
+  .hero-about__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-right: 2px solid rgba(200,155,90,0.5);
+    padding-right: 20px;
   }
 
-  .hero-stat-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 3px;
-    height: 100%;
-    background: var(--gradient-secondary);
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 0.25s ease;
+  .hero-about__stat:first-child {
+    border-right: none;
+    padding-right: 0;
   }
 
-  .hero-stat-card:hover {
-    background: rgba(200, 155, 90, 0.1);
-    border-color: rgba(200, 155, 90, 0.5);
-    transform: translateY(-2px);
-  }
-
-  .hero-stat-card:hover::before {
-    transform: scaleY(1);
-  }
-
-  .hero-stat-value {
-    font-size: 1.6rem;
-    font-weight: 900;
+  .hero-about__stat-num {
+    font-size: 2rem;
+    font-weight: 800;
     color: var(--accent);
     line-height: 1;
-    margin-bottom: 6px;
-    display: block;
   }
 
-  .hero-stat-label {
-    font-size: 0.82rem;
-    color: rgba(250, 250, 248, 0.7);
-    font-weight: 500;
-    line-height: 1.4;
+  .hero-about__stat-label {
+    font-size: 0.78rem;
+    color: rgba(250,250,248,0.65);
+    letter-spacing: 0.04em;
   }
 
-  .hero-free-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: var(--gradient-secondary);
-    border-radius: 3px;
-    padding: 10px 22px;
-    width: fit-content;
-    margin-top: 4px;
-    box-shadow: 0 4px 16px rgba(200, 155, 90, 0.35);
-    transition: all 0.25s ease;
-  }
-
-  .hero-free-badge:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(200, 155, 90, 0.5);
-  }
-
-  .hero-free-badge-icon {
-    width: 22px;
-    height: 22px;
-    fill: #1E3A5F;
-  }
-
-  .hero-free-badge-text {
-    font-size: 0.95rem;
-    font-weight: 800;
-    color: #1E3A5F;
-    letter-spacing: 0.5px;
-  }
-
-  /* Right visual panel */
-  .hero-visual-panel {
+  .hero-about__img-col {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
   }
 
-  .hero-image-frame {
+  .hero-about__img-frame {
     position: relative;
     width: 100%;
-    max-width: 480px;
-    aspect-ratio: 4/5;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+    max-width: 440px;
   }
 
-  .hero-image-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .hero-image-frame::after {
+  .hero-about__img-frame::before {
     content: '';
     position: absolute;
-    inset: 0;
-    border: 2px solid rgba(200, 155, 90, 0.3);
+    top: -18px;
+    left: -18px;
+    right: 18px;
+    bottom: 18px;
+    border: 2px solid rgba(200,155,90,0.35);
     border-radius: 4px;
+    z-index: 1;
     pointer-events: none;
   }
 
-  .hero-image-corner {
+  .hero-about__img-frame::after {
+    content: '';
     position: absolute;
-    width: 50px;
-    height: 50px;
-    z-index: 5;
+    bottom: -18px;
+    right: -18px;
+    left: 18px;
+    top: 18px;
+    background: rgba(200,155,90,0.08);
+    border-radius: 4px;
+    z-index: 0;
+    pointer-events: none;
   }
 
-  .hero-image-corner.tl {
-    top: -6px;
-    right: -6px;
-    border-top: 3px solid var(--accent);
-    border-right: 3px solid var(--accent);
+  .hero-about__img-frame img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease;
   }
 
-  .hero-image-corner.br {
-    bottom: -6px;
-    left: -6px;
-    border-bottom: 3px solid var(--accent);
-    border-left: 3px solid var(--accent);
+  .hero-about__img-frame:hover img {
+    transform: scale(1.02);
   }
 
-  .hero-floating-tag {
+  .hero-about__floating-tag {
     position: absolute;
     bottom: -20px;
     right: -20px;
-    background: var(--gradient-primary);
-    border: 1px solid rgba(200, 155, 90, 0.4);
+    background: var(--gradient-secondary);
+    color: #fff;
+    padding: 16px 24px;
     border-radius: 4px;
-    padding: 18px 22px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    z-index: 10;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    z-index: 15;
     text-align: center;
     min-width: 130px;
   }
 
-  .hero-floating-tag-value {
-    font-size: 2rem;
-    font-weight: 900;
-    color: var(--accent);
+  .hero-about__floating-tag strong {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
     line-height: 1;
-    display: block;
   }
 
-  .hero-floating-tag-label {
-    font-size: 0.75rem;
-    color: rgba(250, 250, 248, 0.8);
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-top: 4px;
-    display: block;
+  .hero-about__floating-tag span {
+    font-size: 0.72rem;
+    opacity: 0.9;
+    letter-spacing: 0.05em;
   }
 
-  .hero-floating-tag2 {
+  .hero-about__corner-deco {
     position: absolute;
     top: 30px;
-    left: -30px;
-    background: rgba(200, 155, 90, 0.95);
-    border-radius: 4px;
-    padding: 14px 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-    z-index: 10;
-    text-align: center;
-    min-width: 110px;
-    animation: float-tag 3s ease-in-out infinite;
+    right: 60px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,155,90,0.12) 0%, transparent 70%);
+    z-index: 5;
+    pointer-events: none;
+    animation: heroPulse 4s ease-in-out infinite;
   }
 
-  @keyframes float-tag {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-8px); }
+  @keyframes heroPulse {
+    0%, 100% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.3); opacity: 1; }
   }
 
-  .hero-floating-tag2-value {
-    font-size: 1rem;
-    font-weight: 900;
-    color: #1E3A5F;
-    line-height: 1.2;
-    display: block;
+  @keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
-  /* Responsive */
+  .hero-about__text-col > * {
+    animation: heroFadeUp 0.7s ease both;
+  }
+  .hero-about__text-col > *:nth-child(1) { animation-delay: 0.1s; }
+  .hero-about__text-col > *:nth-child(2) { animation-delay: 0.2s; }
+  .hero-about__text-col > *:nth-child(3) { animation-delay: 0.3s; }
+  .hero-about__text-col > *:nth-child(4) { animation-delay: 0.4s; }
+  .hero-about__text-col > *:nth-child(5) { animation-delay: 0.5s; }
+
+  .hero-about__img-col {
+    animation: heroFadeUp 0.9s ease 0.3s both;
+  }
+
   @media (max-width: 900px) {
-    .hero-content-wrapper {
+    .hero-about__content-wrap {
       grid-template-columns: 1fr;
-      padding: 100px 28px 60px 28px;
-      gap: 40px;
+      padding: 110px 28px 60px 28px;
+      gap: 48px;
+      min-height: auto;
     }
-
-    .hero-visual-panel {
+    .hero-about__img-col {
+      order: -1;
+    }
+    .hero-about__img-frame img {
+      height: 320px;
+    }
+    .hero-about__img-frame::before,
+    .hero-about__img-frame::after {
       display: none;
     }
-
-    .hero-stats-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .hero-about__floating-tag {
+      bottom: -10px;
+      right: 10px;
+    }
+    .hero-about__gold-stripe {
+      width: 4px;
     }
   }
 
   @media (max-width: 480px) {
-    .hero-content-wrapper {
-      padding: 100px 20px 60px 20px;
+    .hero-about__content-wrap {
+      padding: 100px 20px 50px 20px;
     }
-
-    .hero-stats-grid {
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
+    .hero-about__stats {
+      gap: 20px;
     }
-
-    .hero-h1 {
-      font-size: 2.2rem;
+    .hero-about__stat-num {
+      font-size: 1.5rem;
+    }
+    .hero-about__img-frame img {
+      height: 260px;
     }
   }
 </style>
 
-<div class="hero-daني">
-
-  <!-- Background Image Layer -->
-  <div class="hero-bg-layer">
-    <div style="background-image: url('assets/image-1775162712737-0f4zda.webp?v=1775162714578'); background-size: cover; background-position: center; width: 100%; height: 100%;"></div>
+<div class="hero-about">
+  <div class="hero-about__bg">
+    <div style="background-image: url('assets/image-1775162712737-0f4zda.webp?v=1775162714578'); width:100%;height:100%;background-size:cover;background-position:center;position:absolute;inset:0;"></div>
   </div>
 
-  <!-- Scrim/Overlay -->
-  <div class="hero-scrim"></div>
+  <div class="hero-about__overlay"></div>
+  <div class="hero-about__gold-stripe"></div>
+  <div class="hero-about__corner-deco"></div>
 
-  <!-- Diagonal accent -->
-  <div class="hero-diagonal-accent"></div>
+  <!-- Top Banner Title -->
+  <div style="position:absolute;top:0;right:0;left:0;z-index:20;text-align:center;padding:32px 24px 28px;background:linear-gradient(180deg,rgba(15,30,55,0.95) 0%,rgba(15,30,55,0.7) 70%,rgba(15,30,55,0) 100%);">
+    <h1 style="margin:0;font-family:'Cormorant Garamond','Playfair Display',Georgia,serif;font-size:clamp(2.2rem,5vw,4rem);font-weight:800;background:linear-gradient(90deg,#B9973E 0%,#F5D78A 40%,#D0AF58 70%,#B9973E 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:0.06em;line-height:1.2;text-shadow:none;filter:drop-shadow(0 2px 8px rgba(180,140,40,0.35));">
+      שמאות רכוש ונזיקין
+    </h1>
+    <div style="width:120px;height:3px;background:linear-gradient(90deg,transparent,#D0AF58,#F5D78A,#D0AF58,transparent);margin:14px auto 0;border-radius:2px;box-shadow:0 0 12px rgba(208,175,88,0.6);"></div>
+  </div>
+  <style>
+    @media (max-width: 768px) {
+      #layout-1775162683174 .hero-about {
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: auto !important;
+      }
+      #layout-1775162683174 .hero-about__bg {
+        position: relative !important;
+        height: 55vw !important;
+        min-height: 260px !important;
+        max-height: 380px !important;
+        order: 2 !important;
+      }
+      #layout-1775162683174 .hero-about__overlay {
+        display: none !important;
+      }
+      #layout-1775162683174 .hero-about__gold-stripe {
+        display: none !important;
+      }
+      #layout-1775162683174 .hero-about__corner-deco {
+        display: none !important;
+      }
+      #layout-1775162683174 div[style*="position:absolute;top:0;right:0;left:0;z-index:20"] {
+        position: relative !important;
+        order: 1 !important;
+        background: linear-gradient(180deg,#1a2f50 0%,#1D3657 100%) !important;
+        padding: 80px 20px 24px !important;
+      }
+      #layout-1775162683174 .hero-about__content-wrap {
+        order: 3 !important;
+        position: relative !important;
+        background: #1D3657 !important;
+        min-height: auto !important;
+        padding: 32px 20px 48px !important;
+        grid-template-columns: 1fr !important;
+      }
+      #layout-1775162683174 .hero-about__img-col {
+        display: none !important;
+      }
+    }
+  </style>
 
-  <!-- Gold side bar -->
-  <div class="hero-gold-bar"></div>
-
-  <!-- Main Content -->
-  <div class="hero-content-wrapper">
-
-    <!-- Text Block -->
-    <div class="hero-text-block">
-
-      <div class="hero-eyebrow">
-        <div class="hero-eyebrow-dot"></div>
-        <span class="hero-eyebrow-text">שמאות רכוש ונזיקין</span>
+  <div class="hero-about__content-wrap">
+    <div class="hero-about__text-col">
+      <div class="hero-about__badge">
+        <span class="hero-about__badge-line"></span>
+        <span class="hero-about__badge-text">שמאות רכוש ונזיקין</span>
       </div>
 
-      <h1 class="hero-h1">
-        שמאות רכוש
-        <span>ונזיקין</span>
-      </h1>
+      <h2 class="hero-about__heading" style="text-align: right; outline: none;">
+        נעים מאוד , הגעתם ל<em>דני מאוני</em>&nbsp;&nbsp;<br>&nbsp;שמאות רכוש ונזיקין<br>&nbsp;מקצועיות שאפשר לסמוך עליה!</h2>
 
-      <div class="hero-divider-line"></div>
+      <div class="hero-about__divider"></div>
 
-      <h2 class="hero-h2">נעים מאוד , הגעתם לדני מאוני &nbsp; שמאות רכוש ונזיקין מקצועיות שאפשר לסמוך עליה!</h2>
+      <p class="hero-about__para" >
+        כשקורה נזק לרכוש היקר לכם , אתם צריכים לצידכם איש מקצוע שרואה את התמונה המלאה. עם ניסיון עשיר בלווי מבוטחים והערכת נזקים מדויקת, אני כאן כדי להבטיח שתקבלו את כל מה שמגיע לכם בשקיפות מלאה ובמקצועיות ללא פשרות. נזקי מים , אש או נזקי טבע ופריצות הם רגעים לא פשוטים . המטרה שלי היא להוריד את הנטל הבירוקרטי ולספק הערכת נזק מקצועית, אובייקטיבית ומפורטת שתשמש אתכם מול חברות ביטוח . אני מזמין אתכם לייעוץ ראשוני וליווי אישי לאורך כל הדרך.</p>
 
-      <p class="hero-paragraph">כשקורה נזק לרכוש היקר לכם , אתם צריכים לצידכם איש מקצוע שרואה את התמונה המלאה. עם ניסיון עשיר בלווי מבוטחים והערכת נזקים מדויקת, אני כאן כדי להבטיח שתקבלו את כל מה שמגיע לכם בשקיפות מלאה ובמקצועיות ללא פשרות. נזקי מים , אש או נזקי טבע ופריצות הם רגעים לא פשוטים . המטרה שלי היא להוריד את הנטל הבירוקרטי ולספק הערכת נזק מקצועית, אובייקטיבית ומפורטת שתשמש אתכם מול חברות ביטוח . אני מזמין אתכם לייעוץ ראשוני וליווי אישי לאורך כל הדרך.</p>
-
-      <div class="hero-stats-grid">
-        <div class="hero-stat-card">
-          <span class="hero-stat-value">100%</span>
-          <span class="hero-stat-label">שקיפות מלאה</span>
+      <div class="hero-about__stats">
+        <div class="hero-about__stat">
+          <span class="hero-about__stat-num">100%</span>
+          <span class="hero-about__stat-label">שקיפות מלאה</span>
         </div>
-        <div class="hero-stat-card">
-          <span class="hero-stat-value" style="font-size:1.1rem; margin-top:2px;">ליווי</span>
-          <span class="hero-stat-label">אישי לאורך כל הדרך</span>
+        <div class="hero-about__stat">
+          <span class="hero-about__stat-num">ליווי</span>
+          <span class="hero-about__stat-label">אישי לאורך כל הדרך</span>
         </div>
-        <div class="hero-stat-card">
-          <span class="hero-stat-value" style="font-size:1.1rem; margin-top:2px;">מקצועי</span>
-          <span class="hero-stat-label">ואובייקטיבי</span>
-        </div>
-        <div class="hero-stat-card" style="background: rgba(200,155,90,0.12); border-color: rgba(200,155,90,0.45);">
-          <span class="hero-stat-value" style="font-size:1rem; margin-top:2px;">ייעוץ</span>
-          <span class="hero-stat-label" style="color: rgba(250,250,248,0.9); font-weight:700;">ראשוני חינם</span>
+        <div class="hero-about__stat">
+          <span class="hero-about__stat-num">מקצועי</span>
+          <span class="hero-about__stat-label">ואובייקטיבי</span>
         </div>
       </div>
-
-      <div class="hero-free-badge">
-        <svg class="hero-free-badge-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"></path>
-        </svg>
-        <span class="hero-free-badge-text">ייעוץ ראשוני חינם — צור קשר עכשיו</span>
-      </div>
-
     </div>
 
-    <!-- Visual Panel (desktop only) -->
-    <div class="hero-visual-panel">
-      <div class="hero-image-frame">
-        <img alt="תיאור תמונה" src="/assets/image-1775162712737-0f4zda.webp?v=1775162714578" data-placeholder="layout-image-1775162683174-7gzvplo44" data-context="תיאור תמונה" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-        <div class="hero-image-corner tl"></div>
-        <div class="hero-image-corner br"></div>
-      </div>
-
-      <div class="hero-floating-tag">
-        <span class="hero-floating-tag-value">100%</span>
-        <span class="hero-floating-tag-label">שקיפות מלאה</span>
-      </div>
-
-      <div class="hero-floating-tag2">
-        <span class="hero-floating-tag2-value">ייעוץ ראשוני<br>חינם</span>
+    <div class="hero-about__img-col">
+      <div class="hero-about__img-frame">
+        <img alt="תיאור תמונה" src="/assets/image-1775162712737-0f4zda.webp?v=1775162714578" data-placeholder="layout-image-1775162683174-7gzvplo44" data-context="תיאור תמונה" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20% !important" data-element-type="image" data-element-id="img-1775164187760-ogdrs83kg" data-zappy-object-position="50% 20%">
+        <div class="hero-about__floating-tag">
+          <strong>ייעוץ</strong>
+          <span>ראשוני חינם</span>
+        </div>
       </div>
     </div>
-
   </div>
-
-  <!-- Bottom SVG Divider -->
-  <div style="position:absolute;bottom:0;left:0;width:100%;height:70px;pointer-events:none;z-index:5;">
-    <svg viewBox="0 0 1200 70" preserveAspectRatio="none" style="display:block;width:100%;height:100%;">
-      <path d="M0,70 L0,40 C200,0 400,70 600,35 C800,0 1000,60 1200,30 L1200,70 Z" fill="#FAFAF8"></path>
-    </svg>
-  </div>
-
 </div>
 </section>
 
