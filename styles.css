@@ -8632,6 +8632,26 @@ nav.navbar .sub-menu li a:hover { color: #1a3151 !important; background-color: r
   min-height: auto !important;
 }
 }
+
+/* Zappy iOS Navbar Overflow Fix v1 */
+/* iOS Safari ignores overflow-x:hidden on <html>, so width:100% / 100vw
+   on a position:fixed element resolves to the visual viewport (which
+   includes any hidden horizontal overflow from page content). That makes
+   the navbar wider than the visible screen and pushes the mobile hamburger
+   menu off-screen to the right. Anchoring with left:0 + right:0 + width:auto
+   ties the navbar to the real layout viewport on every mobile browser. */
+@media (max-width: 768px) {
+  .navbar,
+  nav.navbar {
+    width: auto !important;
+    max-width: none !important;
+    left: 0 !important;
+    right: 0 !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+}
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
