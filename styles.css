@@ -8678,6 +8678,48 @@ nav.navbar .sub-menu li a:hover { color: #1a3151 !important; background-color: r
   }
 }
 
+
+/* ZAPPY_IOS_NAVBAR_GAP_FIX */
+/* iOS Safari ignores overflow-x:hidden on <html>, so any horizontal
+   overflow on the page leaves visual viewport > layout viewport.
+   position:fixed descendants anchored with right:0 then pin to the
+   visual viewport right edge — off-screen past the navbar. The companion
+   runtime (ZAPPY_IOS_VIEWPORT_GAP_FIX in script.js) measures the gap and
+   exposes it as --ios-viewport-gap; this rule uses it to shift the menu
+   inward onto the real layout-viewport right edge. On every other
+   browser, gap is 0 and the rule is a no-op. The selector list mirrors
+   the RTL selectors used elsewhere in Zappy CSS so this rule wins the
+   cascade via equal-or-higher specificity. */
+@media (max-width: 768px) {
+  .navbar,
+  nav.navbar {
+    width: auto !important;
+    max-width: none !important;
+    left: 0 !important;
+    right: 0 !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+  #navMenu,
+  .nav-menu,
+  html[dir="rtl"] .nav-menu,
+  html[dir="rtl"] .navbar .nav-menu,
+  html[dir="rtl"] nav .nav-menu,
+  html[dir="rtl"] header .nav-menu,
+  html[dir="rtl"] .nav-container .nav-menu,
+  [dir="rtl"] .navbar .nav-menu,
+  [dir="rtl"] nav .nav-menu,
+  [dir="rtl"] header .nav-menu,
+  [dir="rtl"] .nav-container .nav-menu,
+  [dir="rtl"] .nav-menu,
+  html[lang="he"] .nav-menu,
+  html[lang="ar"] .nav-menu {
+    position: fixed !important;
+    top: var(--zappy-navbar-bottom, 70px) !important;
+    right: var(--ios-viewport-gap, 0px) !important;
+  }
+}
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
