@@ -9587,6 +9587,357 @@ nav.navbar .sub-menu li a:hover { color: #1a3151 !important; background-color: r
     font-size: 10px;
   }
 }
+
+/* AI-generated section */
+/* =============================================
+   FIRE DAMAGE SECTION — נזקי שריפות ועשן
+   ============================================= */
+
+.fire-damage-section {
+  background: var(--primary, #1E3A5F);
+  background-image: linear-gradient(135deg, #1a3356 0%, #1E3A5F 50%, #162d4a 100%);
+  padding: 90px 24px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background texture */
+.fire-damage-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(200, 155, 90, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 20% 80%, rgba(200, 155, 90, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Container: two-column grid */
+.fire-damage-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* =============================================
+   RIGHT SIDE — CONTENT
+   ============================================= */
+
+.fire-damage-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Badge */
+.fire-damage-badge {
+  display: inline-block;
+  background: rgba(200, 155, 90, 0.15);
+  border: 1px solid rgba(200, 155, 90, 0.5);
+  color: #C89B5A;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+/* Heading wrap: icon + title */
+.fire-damage-heading-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Flame icon */
+.fire-damage-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  background: rgba(200, 155, 90, 0.12);
+  border: 1px solid rgba(200, 155, 90, 0.3);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.fire-damage-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Main heading */
+.fire-damage-heading {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+/* Description paragraph */
+.fire-damage-description {
+  font-size: 16px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0;
+  border-right: 3px solid #C89B5A;
+  padding-right: 16px;
+}
+
+/* Service list */
+.fire-damage-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+}
+
+.fire-damage-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 12px 14px;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+
+.fire-damage-list-item:hover {
+  background: rgba(200, 155, 90, 0.1);
+  border-color: rgba(200, 155, 90, 0.35);
+  transform: translateY(-2px);
+}
+
+.fire-damage-bullet {
+  color: #C89B5A;
+  font-size: 12px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+
+/* CTA Button */
+.fire-damage-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #C89B5A;
+  color: #1E3A5F;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 15px 32px;
+  border-radius: 50px;
+  width: fit-content;
+  letter-spacing: 0.02em;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 20px rgba(200, 155, 90, 0.35);
+  margin-top: 4px;
+}
+
+.fire-damage-cta:hover,
+.fire-damage-cta:focus-visible {
+  background: #d9aa6a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(200, 155, 90, 0.5);
+  outline: none;
+}
+
+.fire-damage-cta:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.fire-damage-cta-arrow {
+  width: 18px;
+  height: 18px;
+  transform: scaleX(-1); /* RTL: flip arrow to point left */
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.fire-damage-cta:hover .fire-damage-cta-arrow {
+  transform: scaleX(-1) translateX(3px);
+}
+
+/* =============================================
+   LEFT SIDE — IMAGE
+   ============================================= */
+
+.fire-damage-image-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Decorative glow */
+.fire-damage-glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(200, 155, 90, 0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Image frame */
+.fire-damage-image-frame {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid rgba(200, 155, 90, 0.3);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  z-index: 1;
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fire-damage-image-frame:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(200, 155, 90, 0.2);
+}
+
+.fire-damage-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 340px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* Image overlay badge */
+.fire-damage-image-badge {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  background: rgba(30, 58, 95, 0.92);
+  border: 1px solid rgba(200, 155, 90, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 50px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.fire-damage-image-badge-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.fire-damage-image-badge-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #C89B5A;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+
+/* =============================================
+   RESPONSIVE — TABLET
+   ============================================= */
+
+@media (max-width: 900px) {
+  .fire-damage-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .fire-damage-image-wrap {
+    order: -1; /* Image on top on tablet/mobile */
+  }
+
+  .fire-damage-image-frame {
+    max-width: 100%;
+  }
+
+  .fire-damage-image {
+    min-height: 280px;
+  }
+
+  .fire-damage-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — MOBILE
+   ============================================= */
+
+@media (max-width: 600px) {
+  .fire-damage-section {
+    padding: 60px 16px;
+  }
+
+  .fire-damage-container {
+    gap: 36px;
+  }
+
+  .fire-damage-heading {
+    font-size: 1.7rem;
+  }
+
+  .fire-damage-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .fire-damage-description {
+    font-size: 15px;
+  }
+
+  .fire-damage-cta {
+    width: 100%;
+    justify-content: center;
+    padding: 15px 24px;
+  }
+
+  .fire-damage-image {
+    min-height: 220px;
+  }
+
+  .fire-damage-image-badge {
+    bottom: 12px;
+    right: 12px;
+    padding: 6px 12px;
+  }
+
+  .fire-damage-image-badge-text {
+    font-size: 12px;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
