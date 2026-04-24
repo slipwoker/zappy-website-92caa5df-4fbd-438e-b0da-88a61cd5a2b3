@@ -8767,6 +8767,337 @@ nav.navbar .sub-menu li a:hover { color: #1a3151 !important; background-color: r
 .contact-faq-section .contact-faq-question:hover .contact-faq-q-text {
   color: var(--accent);
 }
+
+/* AI-generated section */
+/* =============================================
+   SERVICES HERO BANNER — דני מאוני שמאי
+   ============================================= */
+
+.svc-hero-banner {
+  position: relative;
+  background: var(--gradient-primary, linear-gradient(180deg, #24476F 0%, #1D3657 100%));
+  background-color: var(--primary, #1E3A5F);
+  padding: 100px 24px 80px;
+  text-align: center;
+  direction: rtl;
+  font-family: system-ui, sans-serif;
+  overflow: hidden;
+}
+
+/* Background overlay for depth */
+.svc-hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(200, 155, 90, 0.12) 0%, transparent 65%),
+              radial-gradient(ellipse at 80% 100%, rgba(36, 71, 111, 0.6) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Subtle geometric pattern */
+.svc-hero-bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 1px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 1px,
+      transparent 60px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Container */
+.svc-hero-container {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Badge */
+.svc-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(200, 155, 90, 0.15);
+  border: 1px solid rgba(200, 155, 90, 0.45);
+  color: #C89B5A;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 8px 20px;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+.svc-hero-badge-icon {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+/* Headline */
+.svc-hero-headline {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Divider */
+.svc-hero-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 180px;
+}
+
+.svc-hero-divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #C89B5A, transparent);
+  opacity: 0.7;
+}
+
+.svc-hero-divider-diamond {
+  width: 8px;
+  height: 8px;
+  background: #C89B5A;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* Subtitle */
+.svc-hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: rgba(220, 232, 248, 0.9);
+  line-height: 1.75;
+  max-width: 680px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.svc-hero-subtitle strong {
+  color: #C89B5A;
+  font-weight: 700;
+}
+
+.svc-hero-br {
+  display: block;
+}
+
+/* Navigation Pills */
+.svc-hero-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.svc-hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(200, 155, 90, 0.12);
+  border: 2px solid #C89B5A;
+  color: #C89B5A;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  font-family: system-ui, sans-serif;
+}
+
+.svc-hero-pill:hover,
+.svc-hero-pill:focus-visible {
+  background: #C89B5A;
+  color: #1E3A5F;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(200, 155, 90, 0.35);
+  outline: none;
+}
+
+.svc-hero-pill:focus-visible {
+  outline: 3px solid #C89B5A;
+  outline-offset: 3px;
+}
+
+.svc-hero-pill:active {
+  transform: translateY(-1px);
+}
+
+.svc-hero-pill-icon {
+  font-size: 17px;
+  line-height: 1;
+}
+
+/* Trust Indicators */
+.svc-hero-trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 20px 40px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.svc-hero-trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0 32px;
+}
+
+.svc-hero-trust-number {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #C89B5A;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.svc-hero-trust-label {
+  font-size: 12px;
+  color: rgba(200, 220, 245, 0.75);
+  font-weight: 500;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.svc-hero-trust-sep {
+  width: 1px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+/* =============================================
+   RESPONSIVE — TABLET
+   ============================================= */
+@media (max-width: 768px) {
+  .svc-hero-banner {
+    padding: 80px 20px 64px;
+  }
+
+  .svc-hero-container {
+    gap: 22px;
+  }
+
+  .svc-hero-nav {
+    gap: 10px;
+  }
+
+  .svc-hero-pill {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .svc-hero-trust {
+    padding: 16px 20px;
+    gap: 0;
+  }
+
+  .svc-hero-trust-item {
+    padding: 0 20px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — MOBILE
+   ============================================= */
+@media (max-width: 520px) {
+  .svc-hero-banner {
+    padding: 64px 16px 52px;
+  }
+
+  .svc-hero-container {
+    gap: 20px;
+  }
+
+  .svc-hero-headline {
+    font-size: 2rem;
+  }
+
+  .svc-hero-subtitle {
+    font-size: 0.97rem;
+  }
+
+  .svc-hero-br {
+    display: inline;
+  }
+
+  .svc-hero-nav {
+    gap: 8px;
+  }
+
+  .svc-hero-pill {
+    font-size: 13px;
+    padding: 9px 14px;
+    gap: 6px;
+  }
+
+  .svc-hero-pill-icon {
+    font-size: 15px;
+  }
+
+  .svc-hero-trust {
+    flex-direction: column;
+    padding: 18px 24px;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .svc-hero-trust-sep {
+    width: 60px;
+    height: 1px;
+  }
+
+  .svc-hero-trust-item {
+    padding: 0;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .svc-hero-trust-number {
+    font-size: 1.4rem;
+  }
+
+  .svc-hero-trust-label {
+    font-size: 13px;
+  }
+
+  .svc-hero-badge {
+    font-size: 11px;
+    padding: 7px 14px;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
