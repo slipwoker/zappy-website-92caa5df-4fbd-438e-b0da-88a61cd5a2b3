@@ -8720,6 +8720,53 @@ nav.navbar .sub-menu li a:hover { color: #1a3151 !important; background-color: r
   }
 }
 
+
+.contact-faq-section .contact-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.contact-faq-section .contact-faq-item.active .contact-faq-answer {
+  max-height: 600px;
+  opacity: 1;
+}
+
+.contact-faq-section .contact-faq-question {
+  cursor: pointer;
+  user-select: none;
+}
+
+.contact-faq-section .contact-faq-question::after {
+  content: '+';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-inline-start: auto;
+  width: 28px;
+  height: 28px;
+  background: var(--bg-light);
+  border: 1px solid var(--border-light);
+  border-radius: 2px;
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  transition: transform 0.25s ease, background 0.2s ease;
+}
+
+.contact-faq-section .contact-faq-item.active .contact-faq-question::after {
+  content: '−';
+  background: var(--primary);
+  color: var(--text-light);
+  border-color: var(--primary);
+}
+
+.contact-faq-section .contact-faq-question:hover .contact-faq-q-text {
+  color: var(--accent);
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
