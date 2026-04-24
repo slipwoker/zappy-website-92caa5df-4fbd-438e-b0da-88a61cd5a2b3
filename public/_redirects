@@ -1,11 +1,10 @@
 # Clean URL redirects for Render static hosting
-# Generated: 2026-04-24T20:25:04.150Z
+# Generated: 2026-04-24T20:27:11.361Z
 # NOTE: Render uses render.yaml for routing, not _redirects (that is Netlify)
 # This file is kept for reference only
 
 /services  /services.html  200!
 /about  /about.html  200!
-/contact  /contact.html  200!
 /privacy  /privacy.html  200!
 /accessibility  /accessibility.html  200!
 /terms  /terms.html  200!
@@ -14,6 +13,8 @@
 /blog/initial-assessment-vs-full-appraisal  /blog/initial-assessment-vs-full-appraisal.html  200!
 /blog/working-with-insurance-after-loss  /blog/working-with-insurance-after-loss.html  200!
 /blog/appraiser-lawyer-engineer-collaboration  /blog/appraiser-lawyer-engineer-collaboration.html  200!
+/external-link-1777062409436  /external-link-1777062409436.html  200!
+/contact  /contact.html  200!
 
 # Legal pages - redirect old .html URLs to friendly URLs
 /privacy.html  /privacy  301
