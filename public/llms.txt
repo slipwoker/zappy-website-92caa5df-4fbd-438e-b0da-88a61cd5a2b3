@@ -1,4 +1,6 @@
-# Business — Generative Engine Optimization Map
+# דני מאוני שמאי רכוש ונזיקין  — Generative Engine Optimization Map
+
+> Danny Mauni is a property and tort appraiser offering professional appraisal services in real estate and damage assessment. The business is positioned as an expert authority in the field, serving clients who need reliable, professional valuations for insurance claims, legal disputes, and property transactions. The brand identity is professional, trustworthy, and authoritative.
 
 ---
 
@@ -62,12 +64,42 @@ Information about WCAG compliance and accessibility features.
 
 ---
 
-# Business Context (for LLM understanding)
+## How to Contact Us
 
-## About Business
+- Email: dani53@012.net.il
+- Phone: 050-7591162
+- Phone (tel): tel:0507591162
+- Address: ראשון לציון , ישראל 
+
+### Contact form
+- URL: https://danimaoni.co.il/contact
+- Endpoint: https://danimaoni.co.il/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
+
 ---
 
-# Additional Resources
+# Business Context (for LLM understanding)
 
-- **Sitemap**: https://danimaoni.co.il/sitemap.xml
-- **Robots.txt**: https://danimaoni.co.il/robots.txt
+## About דני מאוני שמאי רכוש ונזיקין 
+Danny Mauni is a property and tort appraiser offering professional appraisal services in real estate and damage assessment. The business is positioned as an expert authority in the field, serving clients who need reliable, professional valuations for insurance claims, legal disputes, and property transactions. The brand identity is professional, trustworthy, and authoritative.
+
+## Target Audience
+בעלי רכוש, נפגעי נזיקין, חברות ביטוח, עורכי דין
+
+## Industry
+שמאות ומשפט
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://danimaoni.co.il/sitemap.xml
+- Robots: https://danimaoni.co.il/robots.txt
+- Flattened page text (for LLMs): https://danimaoni.co.il/llms-full.txt
